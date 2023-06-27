@@ -25,7 +25,8 @@ start_fl() {
   fi
   lst=$SECONDS
   #(./sleep.sh 2>&1 & echo $! >&3 ) 3> $DIR/transfer/pid.fl
-  ((python sleep.py 2>&1 & echo $! >&3 ) 3>$DIR/transfer/pid.fl )
+  #((python sleep.py 2>&1 & echo $! >&3 ) 3>$DIR/transfer/pid.fl )
+  ((./cmd.php 2>&1 & echo $! >&3 ) 3>$DIR/transfer/pid.fl )
   #((python3 -u -m nvflare.private.fed.app.server.server_train -m $DIR/.. -s fed_server.json --set secure_train=false config_folder=config host=${host} sp=${sp} 2>&1 & echo $! >&3 ) 3>$DIR/transfer/pid.fl )
   pid=`cat $DIR/transfer/pid.fl`
   echo "new pid ${pid}"
