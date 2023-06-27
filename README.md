@@ -1,5 +1,5 @@
 # bash_job
-## start job, here job is sleep.php
+## start job, here job is sleep.py
 ./start.sh
 
 ## stop job
