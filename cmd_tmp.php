@@ -1,4 +1,4 @@
-#!/work/u00cjz00/binary/php/7.4/bin/php
+#!/work/u00cjz00/binary/python374
 <?php
 $guest=trim(shell_exec('whoami'));
 $node=trim(shell_exec('hostname -s'));
